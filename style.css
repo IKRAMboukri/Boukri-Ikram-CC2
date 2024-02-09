@@ -1,0 +1,134 @@
+/*ex1*/
+/*1*/
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+
+}
+/*2*/
+article>h2{
+    color: green;
+}
+/*3*/
+h2~p{
+    color: blue;
+    font-style: italic;
+}
+/*4*/
+h1 :first-child{
+    text-shadow: 10px red;
+}
+/*5*/
+.image{
+    border-radius: 40%;
+}
+/*ex3*/
+.title{
+    color: white;
+    font-size:bold;
+    text-align: left;
+    text-decoration: none;
+    padding: 30px;
+}
+.container{
+    
+    background-color: black;
+
+}
+.cont{
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+
+}
+.lien{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+a:focus{
+    background-color: blueviolet;
+}
+.contenue{
+    width: 70%;
+    height: 400px;
+    border: 2px solid black;
+    
+    
+    
+}
+.image1{
+    display: flex;
+    justify-content: space-between;
+}
+.image2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image3{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.taille{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+/*ex2*/
+.container2{
+    width: 280px;
+    height: 280px;
+    background-color: blue;
+}
+@media (max-width:670px){
+     .container2{
+        background-color: red;
+     }
+}
+@media screen  (max-width: 670px and min-width:1500px){
+    .container2{
+       background-color:green;
+    }
+}
+/*ex5*/
+
+
+
+#boite{
+    background-color: red;
+    position: relative;
+    background-color: rgb(130, 124, 124);
+    width:100px;
+    height: 100px;
+    animation: animate 5s infinite;
+}
+@keyframes animate{
+    0%{
+        transform:translate(0px,0px);
+    }
+    50%{
+        transform:translate(10px,10px);
+
+    }
+    100%{
+        transform:translate(400px,0px) ;
+    }
+
+}
+
+
